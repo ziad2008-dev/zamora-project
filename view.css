@@ -1,0 +1,78 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family: Arial, sans-serif;}
+.navbar{display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color: navy;
+    padding: 15px 30px;
+    z-index:10000px !important;}
+.navbar .logo{color:white; font-size: 24px; font-weight: bold;}
+.navbar .nav-links{display:flex;
+                    list-style: none;
+                        gap: 20px;}
+.navbar .nav-links li a{color:white; text-decoration: none;
+                     font-size: 18px;
+                     transition: color 0.3s;}
+.navbar .nav-links li a:hover{color:#ffcc00;}
+section{padding:100px 30px;
+        text-align: center;}                
+        /*end of nav*/
+   
+/*view page*/
+/* الحاوية الرئيسية */
+.view-container {
+    min-height: 100vh; /* عشان يملأ الشاشة كلها */
+    background-color: #0d1b2a; /* لون أزرق كحلي غامق جداً */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white; /* يخلي كل النصوص باللون الأبيض */
+    text-align: center;
+}
+
+/* تنسيق الصورة */
+.main-img {
+    width: 90%;
+    max-width: 300px; /* صغرنا حجم الصورة */
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+/* تنسيق التفاصيل (الاسم والسعر) */
+.view-details {
+    width: 100%;
+}
+
+.view-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.view-details p {
+    font-size: 22px;
+    color: #e0e1dd; /* لون رمادي فاتح للسعر */
+    margin-bottom: 30px;
+}
+
+/* تنسيق زر الشراء */
+.buy-btn {
+    width: 80%; /* الزر يكون عريض شوية */
+    max-width: 300px;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; /* حدود بيضاء زي الصورة */
+    border-radius: 30px; /* الزر يكون بيضاوي */
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: white;
+    color: #0d1b2a;
+}  

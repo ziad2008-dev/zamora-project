@@ -1,0 +1,192 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family: Arial, sans-serif;}
+.navbar{display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color: navy;
+    padding: 15px 30px;
+    z-index:10000px !important;}
+.navbar .logo{color:white; font-size: 24px; font-weight: bold;}
+.navbar .nav-links{display:flex;
+                    list-style: none;
+                        gap: 20px;}
+.navbar .nav-links li a{color:white; text-decoration: none;
+                     font-size: 18px;
+                     transition: color 0.3s;}
+.navbar .nav-links li a:hover{color:#ffcc00;}
+section{padding:100px 30px;
+        text-align: center;}                
+/*end of nav bar*/
+
+/*filter buttons*/
+
+/* Filter Buttons */
+.filter-buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    background-color: #001f3f; /* navy blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.filter-btn:hover {
+    background-color: #003366;
+}
+
+/* Products Layout */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card a{background: #001f3f;
+                    color:white;
+                    border:none;
+                    padding:10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;}     
+.product-card a{text-decoration: none;}
+.sizes{
+    margin:20px 0;
+}
+
+.size-btn{
+    padding:10px 15px;
+    margin:5px;
+    border:1px solid #001f3f;
+    background:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* لما المستخدم يختار */
+.size-btn.active{
+    background:#001f3f;
+    color:white;
+}
+/*hero section*/
+.hero{
+    height:90vh;
+    background-image:url("zmaorapic.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+.hero_content{
+    background:rgba(0,0,0,0.45);
+    padding:40px;
+    border-radius: 10px;
+
+}
+.hero h1{font-size:50px;
+        margin-bottom:20px;}
+.hero p{font-size:18px;
+        margin-bottom:30px;}
+.hreo_buttons{display: flex;
+            gap:15px;
+            justify-content: center;
+        }       
+.btn{padding:12px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;}
+.primary{background-color: #001f3f;
+        color:white;}
+.secondary{background-color: white;
+            color:#001f3f}      
+     /*products layout*/         
+.products{
+    padding:60px;
+    text-align: center;
+}                      
+.products h2{
+    font-size:32px;
+    margin-bottom:40px;
+    color:#001f3f;}
+.product-container{
+    display:grid;
+    gap:30px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}               
+.product-card{width:250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0 0,0.1 );
+            padding:20px;
+            transition: 0.3s;
+}
+.product-card:hover{transform: translateY(-5px);}
+.product-card img{
+    width:100%;
+    border-radius: 8px;
+}
+.product-card h3{margin-top: 15px;
+                color:#001f3f;}
+.product-card p{
+    margin:10px 0;
+}                
+.product-card span{font-weight: bold;
+                display: block;
+                margin-bottom:10px}
+.product-card button{background: #001f3f;
+                    color:white;
+                    border:none;
+                    padding:10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;}         
+                    /*footer*/
+footer{background: #001f3f;
+        color:white;
+        padding:40px 10% 20px;
+        }
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}   
+.footer h2{
+    margin-bottom:10px;
+}                      
+.footer h3{
+    margin-bottom: 10px;
+}   
+.footer-links a:hover,
+ .footer-socials a:hover{text-decoration: underline;}
+ .footer-bottom{
+    text-align: center;
+    margin-top:30px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+ }
+
