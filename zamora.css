@@ -190,3 +190,16 @@ footer{background: #001f3f;
     padding-top:15px;
  }
 
+/* هذا الكود يطبق فقط على الشاشات التي عرضها أقل من 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* لو كنت مستخدم flex */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    font-size: 14px; /* تصغير الخط قليلاً */
+  }
+}
+
