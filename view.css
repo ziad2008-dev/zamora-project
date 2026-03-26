@@ -76,3 +76,16 @@ section{padding:100px 30px;
     background-color: white;
     color: #0d1b2a;
 }  
+
+/* هذا الكود يطبق فقط على الشاشات التي عرضها أقل من 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* لو كنت مستخدم flex */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    font-size: 14px; /* تصغير الخط قليلاً */
+  }
+}
