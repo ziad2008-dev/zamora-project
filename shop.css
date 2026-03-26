@@ -100,3 +100,16 @@ a{text-decoration: none;}
     justify-content: space-between; /* بيوزع العناصر بانتظام */
     padding-bottom: 25px; 
 }
+
+/* هذا الكود يطبق فقط على الشاشات التي عرضها أقل من 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* لو كنت مستخدم flex */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    font-size: 14px; /* تصغير الخط قليلاً */
+  }
+}
