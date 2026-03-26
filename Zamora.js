@@ -51,3 +51,21 @@ sizeButtons.forEach(btn => {
         btn.classList.add("active")
     })
 })
+
+function filterproducts(category) {
+    // 1. تحديد كل الكروت
+    const cards = document.querySelectorAll('.product-card');
+
+    cards.forEach(card => {
+        // 2. لو التصنيف 'all' أظهر كل الكروت
+        if (category === 'all') {
+            card.style.display = 'block';
+        } 
+        // 3. لو الكارت يحتوي على الـ class المطلوب أظهره، غير كده إخفيه
+        else if (card.classList.contains(category)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
